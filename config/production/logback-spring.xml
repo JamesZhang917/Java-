@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!--此处填写自己的服务名-->
+    <contextName>sds-easy-center</contextName>
+
+    <!--建议线上不要开USE_CONSOLE，改为false-->
+    <property name="USE_CONSOLE" value="true"/>
+
+    <!--可自定义保存日志的个数，当前每小时产生一个文件，因此需要配置n*24，n是天数-->
+    <property name="LOG_HIS_MAX" value="168"/>
+
+    <!--系统日志级别，可选INFO、DEBUG， -->
+    <property name="FRAME_LOGGER_LEVEL" value="DEBUG"/>
+    <!-- FUTURE_SPLITTING为true时，最新的文件为.log/.wf结尾 -->
+    <property name="FUTURE_SPLITTING" value="true" />
+    <!-- logback-base.xml文件需要在contextName和property之后，该文件提供了3种日志文件格式FRAME、APP、RPC，分别对应框架、应用、rpc调用，默认保存7*24小时的日志-->
+    <include resource="logback-base.xml"/>
+
+    <!-- 组件日志，仅供参考，可以针对不同的包设置不同的日志级别，支持APP和RPC日志两种，建议只使用APP-->
+    <!--logger name="com.sftech.example.com.sftech.sds.sds.easy.center" level="INFO">
+        <appender-ref ref="APP.INFO"/>
+        <appender-ref ref="APP.WF"/>
+    </logger>
+    <logger name="com.sftech.sds.sds.easy.center.rpc" level="DEBUG">
+        <appender-ref ref="APP.INFO"/>
+        <appender-ref ref="APP.WF"/>
+    </logger-->
+</configuration>

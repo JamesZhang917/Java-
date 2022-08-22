@@ -1,0 +1,9 @@
+jacocoTestReport {
+    reports {
+        csv.enabled false
+        xml.enabled true
+        html.enabled true
+    }
+}
+task coverage { dependsOn 'jacocoTestReport' }
+check.dependsOn jacocoTestReport

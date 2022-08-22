@@ -1,0 +1,16 @@
+plugins {
+
+}
+
+group rootProject.group
+version rootProject.version
+
+repositories {
+
+}
+
+dependencies {
+    implementation('com.sftech.sds.common:sds-common-jar:1.0.0-SNAPSHOT') {
+        exclude group: 'com.sftech.common.spring', module: 'spring-mybatis-plus'
+    }
+}

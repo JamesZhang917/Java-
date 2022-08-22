@@ -1,0 +1,40 @@
+def getRepositoryUsername() {
+    return "deployment"
+}
+
+def getRepositoryPassword() {
+    return "deployment123"
+}
+
+compileJava.doFirst {
+    if (!gradle.getTaskGraph().hasTask(uploadArchives)){
+        return
+    }
+    jar {
+        enabled = true //强制重新打包，org.springframework.boot会略过打包的过程，所以该配置必须要加
+    }
+}
+
+afterEvaluate { project ->
+    uploadArchives {
+        repositories {
+            mavenDeployer {
+                pom.groupId = project["GROUP_ID"]
+                pom.version = project["VERSION"]
+                pom.artifactId = project["ARTIFACT_ID"]
+
+                // 注意version默认是SNAPSHOT，去掉才能发布到release
+                if (pom.version.endsWith('SNAPSHOT')) {
+                    snapshotRepository(url: "http://repo.sftcwl.com/repository/sf-snapshot") {
+                        authentication(userName: getRepositoryUsername(), password: getRepositoryPassword())
+                    }
+                } else {
+                    // 生产nexus：http://repo.sftcwl.com/repository/sf-release/
+                    repository(url: "http://repo.sftcwl.com/repository/sf-release/") {
+                        authentication(userName: getRepositoryUsername(), password: getRepositoryPassword())
+                    }
+                }
+            }
+        }
+    }
+}

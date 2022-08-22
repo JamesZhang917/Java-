@@ -1,0 +1,25 @@
+def getGitBranch() {
+    return 'git symbolic-ref --short -q HEAD'.execute().text.trim()
+}
+
+def getProjectName() {
+    return project["GIT_MODULE_NAME"]
+}
+
+def getProjectKey() {
+    return project["GROUP_ID"] + ":" + project["ARTIFACT_ID"]
+}
+
+def getProjectVersion() {
+    return project["VERSION"]
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", getProjectKey()
+        property "sonar.projectName", getProjectName()
+        property "sonar.branch.name", getGitBranch()
+        property "sonar.host.url", "http://sonarqube.sftcwl.com"
+        property "sonar.login", "93e95872f141c42c7d914cc8ff8dd93b2b3b32ad"
+    }
+}

@@ -1,0 +1,120 @@
+buildscript {
+	repositories {
+		maven { url 'https://maven.aliyun.com/repository/central' }
+		maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+	}
+}
+
+plugins {
+	id 'org.springframework.boot' version '2.1.18.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+	id 'java'
+	id 'maven'
+	id 'pmd'
+	id 'jacoco'
+	id 'org.sonarqube' version '2.6'
+}
+
+apply from: "$rootDir/tools/gradle/upload.gradle"
+apply from: "$rootDir/tools/gradle/pmd.gradle"
+apply from: "$rootDir/tools/gradle/sonar.gradle"
+apply from: "$rootDir/tools/gradle/jacoco.gradle"
+apply from: "$rootDir/tools/gradle/profile.gradle"
+apply from: "$rootDir/tools/gradle/dependencies.gradle"
+apply from: "$rootDir/tools/gradle/jar.gradle"
+
+configurations {
+	developmentOnly
+	runtimeClasspath {
+		extendsFrom developmentOnly
+	}
+}
+
+/* 依赖冲突检查
+configurations.all {
+	resolutionStrategy {
+		failOnVersionConflict()
+	}
+}
+ */
+dependencyManagement {
+	resolutionStrategy {
+		cacheChangingModulesFor 0, 'seconds'
+	}
+}
+
+group = project['GROUP_ID']
+version = project['VERSION']
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+repositories {
+	maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+	maven { url 'http://repo.sftcwl.com/repository/sf-group/' }
+}
+
+
+dependencies {
+	implementation('org.springframework.boot:spring-boot-starter-web') {
+		exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
+	}
+	implementation 'com.alibaba:fastjson'
+	implementation 'com.fasterxml.jackson.core:jackson-databind'
+	implementation 'com.sftech.common.logging:logging-logback'
+	implementation 'com.sftech.common.spring:spring-boot-web-starter'
+	implementation 'com.sftech.common.spring:spring-jetty-starter'
+	implementation 'com.sftech.common.spring:spring-web-tools'
+	implementation 'com.sftech.common.spring:spring-feign'
+	implementation 'org.codehaus.janino:janino'
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	pmd 'com.alibaba.p3c:p3c-pmd'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'junit:junit'
+	testImplementation 'org.mockito:mockito-core'
+	compile project(':sds-easy-center-api')
+	implementation group: 'com.sftech.sds.common', name: 'sds-common-jar', version: '1.0.0-SNAPSHOT'
+}
+
+subprojects {
+	buildscript {
+		repositories {
+			maven { url 'https://maven.aliyun.com/repository/central' }
+			maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+		}
+	}
+
+	repositories {
+		maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+		maven { url 'http://repo.sftcwl.com/repository/sf-group/' }
+	}
+
+
+	apply plugin: 'io.spring.dependency-management'
+	apply plugin: 'pmd'
+	apply plugin: 'jacoco'
+	apply plugin: 'java'
+	apply plugin: 'maven'
+
+	apply from: "$rootDir/tools/gradle/upload.gradle"
+	apply from: "$rootDir/tools/gradle/pmd.gradle"
+	apply from: "$rootDir/tools/gradle/sonar.gradle"
+	apply from: "$rootDir/tools/gradle/jacoco.gradle"
+	apply from: "$rootDir/tools/gradle/profile.gradle"
+	apply from: "$rootDir/tools/gradle/dependencies.gradle"
+
+	group = project['GROUP_ID']
+	version = project['VERSION']
+
+	sourceCompatibility = '1.8'
+	targetCompatibility = '1.8'
+	dependencies {
+		compileOnly 'org.projectlombok:lombok'
+		annotationProcessor 'org.projectlombok:lombok'
+		pmd 'com.alibaba.p3c:p3c-pmd'
+		testImplementation 'org.springframework.boot:spring-boot-starter-test'
+		testImplementation 'junit:junit'
+		testImplementation 'org.mockito:mockito-core'
+	}
+}

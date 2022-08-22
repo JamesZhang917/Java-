@@ -1,0 +1,32 @@
+def getProfile = {
+    def p = "development"
+    if (project.hasProperty("profile")) {
+        p = project["profile"]
+    }
+    return p
+}
+
+task copyConfigFile(type: Copy){
+    def p = getProfile()
+    from("config/$p")
+    into "build/libs/config"
+}
+
+task copyShellFile(type: Copy){
+    def p = getProfile()
+    from "run.sh"
+    into "build/libs"
+}
+
+task output(type: Copy){
+    dependsOn build
+    def p = getProfile()
+    delete "output"
+    into "output"
+    from "build/libs"
+}
+
+bootJar {
+    dependsOn copyConfigFile
+    dependsOn copyShellFile
+}

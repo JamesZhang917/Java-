@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1450b5d8-ece3-4c5f-a12d-662cae56ed65" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/democenter/management/DemoManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-center-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/demo-center-api/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-center-api/src/main/java/democenter/api/DemoCenterApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-center-api/src/main/java/democenter/api/DemoCenterApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-center-api/upload.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/demo-center-api/upload.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/democenter/controller/GroupsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/democenter/controller/GroupsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/democenter/exception/CustomException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/democenter/rpc/DemoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/democenter/rpc/DemoClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/democenter/service/GroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/democenter/service/GroupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/democenter/service/impl/GroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/democenter/service/impl/GroupServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sftc/example/democenter/DemoCenterApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/democenter/DemoCenterApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/demo-center-api">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="demo-center" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="demo-center" type="f1a62948:ProjectNode" />
+                <item name="demo-center-api" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="demo-center" type="f1a62948:ProjectNode" />
+                <item name="demo-center-api" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="demo-center" type="f1a62948:ProjectNode" />
+                <item name="demo-center-api" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="upload" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="27g4Ro1Sy7YjrTAI4VeQUNImZCo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo-center-api" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="democenter" />
+      <recent name="democenter.mapper" />
+      <recent name="democenter.annotation" />
+      <recent name="democenter.rpc" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-center-api" />
+      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
+      <recent name="$PROJECT_DIR$/src/main/java/democenter/service" />
+      <recent name="$PROJECT_DIR$/src/main/java/democenter/mapper" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/sftc/example/democenter" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="sds-easy-center.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sftech.sds.easy.center.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="sds-easy-center.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sftech.sds.sds.easy.center.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1450b5d8-ece3-4c5f-a12d-662cae56ed65" name="Default Changelist" comment="" />
+      <created>1649728389296</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649728389296</updated>
+      <workItem from="1649728390879" duration="4820000" />
+      <workItem from="1649748334577" duration="101000" />
+      <workItem from="1649748521815" duration="112000" />
+      <workItem from="1649748796385" duration="4263000" />
+      <workItem from="1649755962029" duration="640000" />
+      <workItem from="1649756789455" duration="789000" />
+      <workItem from="1649757840769" duration="232000" />
+      <workItem from="1649758787879" duration="2560000" />
+      <workItem from="1649763908503" duration="1357000" />
+      <workItem from="1649814140636" duration="1409000" />
+      <workItem from="1649828514293" duration="11331000" />
+      <workItem from="1649843050829" duration="2835000" />
+      <workItem from="1649901368882" duration="4065000" />
+      <workItem from="1649906107549" duration="620000" />
+      <workItem from="1649914850982" duration="1724000" />
+      <workItem from="1649923453065" duration="152000" />
+      <workItem from="1649925528755" duration="649000" />
+      <workItem from="1649988984058" duration="4361000" />
+      <workItem from="1650002250995" duration="2040000" />
+      <workItem from="1650016947590" duration="202000" />
+      <workItem from="1650183541497" duration="247000" />
+      <workItem from="1660629225666" duration="2335000" />
+      <workItem from="1660632413793" duration="603000" />
+    </task>
+    <task id="LOCAL-00001" summary="移动路径">
+      <created>1649729548843</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649729548843</updated>
+    </task>
+    <task id="LOCAL-00002" summary="添加文件">
+      <created>1649731779072</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649731779072</updated>
+    </task>
+    <task id="LOCAL-00003" summary="添加文件">
+      <created>1649828607061</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1649828607061</updated>
+    </task>
+    <task id="LOCAL-00004" summary="api增加打包脚本">
+      <created>1649833327702</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649833327702</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="移动路径" />
+    <MESSAGE value="添加文件" />
+    <MESSAGE value="api增加打包脚本" />
+    <option name="LAST_COMMIT_MESSAGE" value="api增加打包脚本" />
+  </component>
+</project>

@@ -1,0 +1,16 @@
+def getProfile = {
+    def p = "development"
+    if (project.hasProperty("profile")) {
+        p = project["profile"]
+    }
+    return p
+}
+
+sourceSets {
+    main {
+        resources {
+            // 标记从哪里寻找配置，用,隔开可以增加多个路径例如：srcDir "config/${profile}", "config/db/${profile}"
+            srcDir "config/" + getProfile()
+        }
+    }
+}

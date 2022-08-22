@@ -1,0 +1,7 @@
+pmd {
+    consoleOutput = true
+    ignoreFailures = true
+    toolVersion = "6.23.0"
+//    rulePriority = 5
+    ruleSets = ["${rootDir}/tools/checkstyle/pmd-ruleset.xml"]
+}
